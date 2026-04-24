@@ -12,32 +12,37 @@
         </div>
 
         <div class="top-buttons">
-            <button>Configurações</button>
+            <div class="config">
+    <button onclick="toggleMenu()">Configurações ⚙️</button>
+
+    <div id="menuConfig" class="menu-config hidden">
+        <button onclick="toggleDarkMode()">Alternar tema</button>
+    </div>
+</div>
             <button>Ajuda</button>
         </div>
     </header>
     <nav class="sidebar">
         <a href="index.html">
-        <button onclick="trocarPagina('inicial')">Menu Inicial</button>
+        <button>Menu Inicial</button>
         </a>
         <a href="avalie.html">
-        <button onclick="trocarPagina('avalie')">Avalie Aqui</button>
+        <button>Avalie Aqui</button>
         </a>
         <a href="contato.html">
-        <button onclick="trocarPagina('agende')">Agende Aqui</button>
+        <button>Agende Aqui</button>
         </a>
         <a href="maissobre.html">
-        <button onclick="trocarPagina('sobre')">Mais Sobre</button>
+        <button>Mais Sobre</button>
         </a>
-    </nav>
     </nav>
     <main class="conteudo">
         <h1>Bem-vindo ao site da CastroTEC</h1>
         <p> É um prazer te ter conosco no nosso mais novo site de assistência ao conserto de eletrodomésticos
-            na região de São Paulo.
+            na região de São paulo.
         </p>
     </main>
 
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
