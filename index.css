@@ -66,6 +66,7 @@ body {
    
 }
 
+
 /* SIDEBAR */
 .sidebar {
     position: fixed;
@@ -95,6 +96,19 @@ body {
 
     transition: 0.3s;
 }
+.botao-sair {
+    margin-top: 590px;
+    margin-left: 33Npx;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+
+    transition: 0.3s;
+     
+}
 
 .sidebar button:hover {
     background-color: var(--sidebar-hover)
@@ -111,6 +125,18 @@ body {
 
     min-height: 200vh; 
     border-radius: 20px;
+}
+
+.imgcont {
+margin-top: 100px;
+position: absolute;
+height: 503px;
+left: 220px;
+right: 0px;
+top: 0px;
+border-radius: 20px 20px 0 0;
+background: linear-gradient(180deg, #50ADEF 0%, #484545 100%);
+
 }
 /* CONFIGURAÇÕES */
 .config {
@@ -133,7 +159,7 @@ body {
     display: none;
 }
 
-.whatsapp-btn {
+.whatsapp-btn img {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -155,3 +181,27 @@ body {
 
     z-index: 1000;
 }
+
+.whatsapp-btn2 img {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: #25D366;
+    color: white;
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+
+    z-index: 1000;
+}
+
