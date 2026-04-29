@@ -50,3 +50,17 @@ function fazerLogout(){
   
 
 }
+
+//Carrosel
+
+const imagens = document.querySelectorAll(".carrosel img");
+
+let index = 0;
+
+function trocarImagem (){
+
+    imagens[index].classList.remove("ativo");
+    imagens[index + 1].classList.add("ativo");
+}
+
+setInterval(trocarImagem, 3000); //troca a imagem
