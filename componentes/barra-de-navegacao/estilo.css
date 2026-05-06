@@ -1,8 +1,24 @@
 body {
-    background-color: orange;
     height: 2000px;
+
+    background-image: url("https://s2.glbimg.com/jouKK37fyS63nORe_321LQu7ItQ=/e.glbimg.com/og/ed/f/original/2020/01/25/masp_foto-marcos-santos_u0y4304.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
 }
 
-#barra-de-navegacao {
-    margin: 10px 10px 10px 10px;
+#topbar {
+    /* Fixed top */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1030;
+
+    /* Enfeite */
+    border-radius: 20px;
+}
+
+#comentario {
+    margin-top: 100px;
 }
