@@ -1,10 +1,10 @@
 body {
-    height: 2000px;
-
     background-image: url("https://s2.glbimg.com/jouKK37fyS63nORe_321LQu7ItQ=/e.glbimg.com/og/ed/f/original/2020/01/25/masp_foto-marcos-santos_u0y4304.jpg");
     background-size: cover;
     background-position: center;
     /* background-attachment: fixed; */
+
+    padding-top: 100px; /* Devido à topbar fixa */
 }
 
 #topbar {
@@ -15,10 +15,14 @@ body {
     right: 20px;
     z-index: 1030;
 
-    /* Enfeite */
+    /* Aparência */
     border-radius: 20px;
 }
 
-#comentario {
-    margin-top: 100px;
+#conteudo {
+    height: 2000px; /* Para teste */
+
+    /* Aparência */
+    background-color: #eaeaea;
+    border-radius: 20px;
 }

@@ -1,0 +1,115 @@
+<!--
+https://getbootstrap.com/docs/5.3/examples/heroes/
+O terceiro exemplo foi utilizado como base.
+Classes
+- `fw-bold`    font-weight: 700;
+- `display-5`  font-size: 3rem;
+- `lh-1`       line-height: 1;
+- `flex-lg-row-reverse` A partir de lg, aplica flex-direction: row-reverse;
+- `g-5` gutter é o espaçamento entre colunas
+- `py-5` padding no eixo Y (tanto top quanto bottom)
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Componente Boostrap</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS e Javascript do Bootsrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Meu CSS e Javascript -->
+        <link rel="stylesheet" href="estilo.css" />
+        <script src="codigo.js"></script>
+    </head>
+    <body>
+        <!-- Hero 1 -->
+        <div class="container px-4 py-5">
+            <div class="row flex-lg-row-reverse g-5">
+                <!-- Imagem -->
+                <div class="col-lg-6">
+                    <img
+                        src="castrotec-serviços.png"
+                        alt="CastroTEC - A melhor assistência técnica de eletrodomésticos na Zona Sul de São Paulo"
+                        class="img-fluid"
+                        width="700"
+                        height="500"
+                        loading="lazy"
+                    />
+                </div>
+                <!-- Texto -->
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">
+                        Assistência técnica em eletrodomésticos na Zona Sul de São Paulo
+                    </h1>
+                    <p class="lead">
+                        Na CastroTEC você encontra serviços especializados em conserto de geladeiras e máquinas de lavar em Moema, Vila Mariana e Capão Redondo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hero 2 -->
+        <div class="container px-4 py-5">
+            <div class="row g-5">
+                <!-- Imagem -->
+                <div class="col-lg-6">
+                    <img
+                        src="conserto-de-geladeira.png"
+                        alt="Conserto de geladeira"
+                        class="img-fluid"
+                        width="700"
+                        height="500"
+                        loading="lazy"
+                    />
+                </div>
+                <!-- Texto -->
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">
+                        Conserto de geladeira
+                    </h1>
+                    <p class="lead">
+                        Falha no resfriamento? Acúmulo excessivo de gelo? Ruídos estranhos? Vazamento de água? Alto consumo de energia? A CastroTEC dispõe de profissionais capacitados para lidar com qualquer problema.
+                    </p>
+                    <p class="lead">
+                        Nossos profissionais têm ampla experiência com geladeiras Brastemp, Consul, LG, Electrolux, Samsung e Panasonic.
+                    </p>
+                </div>
+            </div>
+
+    
+        </div>
+
+        <!-- Hero 3 -->
+        <div class="container px-4 py-5">
+            <div class="row g-5 flex-lg-row-reverse">
+                <!-- Imagem -->
+                <div class="col-lg-6">
+                    <img
+                        src="conserto-de-maquina-de-lavar.png"
+                        alt="Conserto de máquina de lavar"
+                        class="img-fluid"
+                        width="700"
+                        height="500"
+                        loading="lazy"
+                    />
+                </div>
+                <!-- Texto -->
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">
+                        Conserto de máquina de lavar
+                    </h1>
+                    <p class="lead">
+                        Vazamentos de água? Ruídos altos? Falha na drenagem ou no enchimento? Trepidação excessiva? Mau cheiro nas roupas? Danos nos tecidos? A CastroTEC dispõe de profissionais capacitados para lidar com qualquer problema.
+                    </p>
+                    <p class="lead">
+                        Nossos profissionais têm ampla experiência com máquinas de lavar Brastemp, Electrolux, LG, Samsung, Panasonic, Consul e Midea.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
