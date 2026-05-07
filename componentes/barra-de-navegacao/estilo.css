@@ -4,7 +4,7 @@ body {
     background-position: center;
     /* background-attachment: fixed; */
 
-    padding-top: 100px; /* Devido à topbar fixa */
+    padding-top: 180px; /* Devido à topbar fixa */
 }
 
 #topbar {
