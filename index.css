@@ -125,27 +125,99 @@ body {
     background-color: var(--conteudo);
     box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 
-    min-height: 200vh; 
+    min-height: 200vh;
     border-radius: 20px;
 }
-
-.imgcont {
-margin-top: 100px;
-position: absolute;
-height: 503px;
-left: 220px;
-right: 0px;
-top: 0px;
-border-radius: 20px 20px 0 0;
-background: linear-gradient(180deg, #50ADEF 0%, #484545 100%);
-
-
-
-}
-.textcont {
-    text-align: center;
+/*Pagnina contato*/
+.painel-busca {
+    width: calc(100% + 40px);
+    margin: -20px -20px 0 -20px;
+    height: 70vh;
+    min-height: 230px;
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+    padding: 50px 30px 35px;
+    background: linear-gradient(180deg, #50ADEF 0%, #484545 100%);
     color: white;
-    margin-top: 13%;
+    text-align: center;
+}
+.cards-container {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 10px;
+}
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    border-radius: 15px;
+    width: 280px;
+    min-width: 280px;
+    text-align: center;
+    scroll-snap-align: center;
+}
+.foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 10px auto;
+}
+.seta {
+    background: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+/*pagina mais sobre*/
+.sobre-topo {
+    text-align: center;
+}
+.carrossel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    margin: 40px 0;
+}
+.imagens {
+    display: flex;
+    gap: 20px;
+}
+
+.img {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+
+    background-size: cover;
+    background-position: center;
+}
+.img4 {
+    background-image: url("https://picsum.photos/300/200");
+}
+
+.img5 {
+    background-image: url("https://picsum.photos/301/200");
+}
+
+.img6 {
+    background-image: url("https://picsum.photos/302/200");
+}
+.seta {
+    padding: 10px;
+    cursor: pointer;
 }
 /* CONFIGURAÇÕES */
 .config {
@@ -233,8 +305,10 @@ section {
 }
 
 .texto {
+    top: 0px;
     flex: 1;
-    max-width: 500px;
+    width: 500px;
+    font-size: larger;
 }
 
 .imagem {
@@ -248,7 +322,7 @@ section {
 .img1 {
     width: 100%;
     height: 100%;
-    background-image: url();
+    background-image: url(https://nicolasriossb-beep.github.io/Projeto-Interdisciplinar/componentes/hero/castrotec-servi%C3%A7os.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -256,7 +330,7 @@ section {
 .img2 {
     width: 100%;
     height: 100%;
-    background-image: url();
+    background-image: url(https://nicolasriossb-beep.github.io/Projeto-Interdisciplinar/componentes/hero/conserto-de-geladeira.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -264,7 +338,7 @@ section {
 .img3 {
     width: 100%;
     height: 100%;
-    background-image: url();
+    background-image: url(https://nicolasriossb-beep.github.io/Projeto-Interdisciplinar/componentes/hero/conserto-de-maquina-de-lavar.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -295,6 +369,21 @@ section {
     }
 
     .invertido {
+        flex-direction: column;
+    }
+/*Pagina busque*/
+     .cards-container {
+        flex-direction: column;
+    }
+
+    .seta {
+        display: none;}
+          
+    .imagens {
+        flex-direction: column;
+    }
+
+    .carrossel {
         flex-direction: column;
     }
 }
