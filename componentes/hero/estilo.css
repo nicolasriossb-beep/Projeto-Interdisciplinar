@@ -1,2 +1,62 @@
+body {
+   background-color: #EAEAEA
+}
+
+/* Zeus - Bloco chamativo com imagem e texto */
+.zeus {
+    /* px-4, py-5 */
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    /* Customização */
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.zeus-row {
+}
+
+.zeus-div-img {
+    /* Centralizar imagem */
+    align-content: center;
+}
+
+.zeus-div-img > img {
+    /* img-fluid */
+    max-width: 100%;
+    height: auto;
+
+    /* Customizar */
+    /* height: 100%; */
+    /* object-fit: none; */
+    /* object-position: center; */
+}
+
+.zeus-div-txt {
+    /* Customizar */
+    border-radius: 20px;
+    border: 1px solid black;
+}
 
 
+.zeus-div-txt > h1 {
+    /* lh-1, fw-bold, mb-3, display-5 */
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: calc(1.425rem + 2.1vw);
+
+    /* Customizar */
+}
+
+.zeus-div-txt > p {
+    /* lead */
+    font-size: 1.25rem;
+    font-weight: 300;
+
+    /* Customizar */
+}

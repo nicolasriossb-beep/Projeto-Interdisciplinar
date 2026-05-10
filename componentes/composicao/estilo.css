@@ -1,0 +1,289 @@
+body {
+    background-image: url("https://s2.glbimg.com/jouKK37fyS63nORe_321LQu7ItQ=/e.glbimg.com/og/ed/f/original/2020/01/25/masp_foto-marcos-santos_u0y4304.jpg");
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+
+}
+
+/* Netuno - barra de navegação */
+.netuno {
+    /* Fixed top */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 1030;
+
+    /* Aparência */
+    border-radius: 20px;
+    background-color: white;
+}
+
+.netuno-logo {
+    max-width: 250px;
+    height: auto;
+
+    /* border-radius: 20px; */
+
+    /* background-color: orange; */
+}
+
+#netuno-nav li { /* Items */
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* background-color: #EFEFEF; */
+}
+
+#netuno-nav a { /* Texto */
+    color: black;
+}
+
+
+/* Atena - bloco principal da página */
+.atena {
+    margin-bottom: 20px;
+    margin-top: 160px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.atena-conteudo {
+    border-radius: 20px;
+    background-color: #EAEAEA;
+    /* box-shadow: -5px -5px 5px 1px rgba(0,0,0,0.4); */
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+
+
+/* Mercurio - Whatsapp no canto inferior direito */
+.mercurio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.mercurio-link {
+    display: inline-flex;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mercurio-svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.mercurio-svg:hover {
+    fill: black;
+}
+
+
+
+/* Saturno - Chamada para Whatsapp */
+.saturno {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.saturno-link {
+    background-color: green;
+    border-radius: 10px;
+    padding: 20px;
+
+    /* Text */
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.saturno-link:hover {
+    /* Text */
+    color: black;
+}
+
+.saturno-svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+
+/* Agendar - Whatsapp */
+.agendar-link {
+    color: green !important;
+}
+
+.agendar-link:hover {
+    color: orange !important;
+}
+
+.agendar-svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+
+
+
+
+/* Zeus - Bloco chamativo com imagem e texto */
+.zeus {
+    /* px-4, py-5 */
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    /* Customização */
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+
+.zeus-row {
+}
+
+.zeus-div-img {
+    /* Centralizar imagem */
+    align-content: center;
+}
+
+.zeus-div-img > img {
+    /* img-fluid */
+    max-width: 100%;
+    height: auto;
+
+    /* Customizar */
+    /* height: 100%; */
+    /* object-fit: none; */
+    /* object-position: center; */
+}
+
+.zeus-div-txt {
+    /* Customizar */
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
+.zeus-div-txt > h1 {
+    /* lh-1, fw-bold, mb-3, display-5 */
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: calc(1.425rem + 2.1vw);
+
+    /* Customizar */
+}
+
+.zeus-div-txt > p {
+    /* lead */
+    font-size: 1.25rem;
+    font-weight: 300;
+
+    /* Customizar */
+}
+
+
+
+
+
+
+
+/* Jano - Perguntas e Respostas */
+#jano {
+    background-color: white;
+    border-radius: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#jano-titulo {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+
+    /* Âncora para :: after */
+    position: relative;
+}
+
+/* Enfeite em baixo de #jano-titulo */
+#jano-titulo::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    /* Centraliza a linha perfeitamente */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Largura, Espessura e Cor do enfeite */
+    width: 12em;
+    height: 3px;
+    background-color: blue;
+}
+
+#jano-accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+#jano-accordion > .accordion-item {
+    width: max(50%, 350px);
+}
+
+#jano-accordion .accordion-header {
+    /* background-color: orange; */
+    /* color: orange; */
+}
+
+/* Quando o item está aberto */
+#jano-accordion .accordion-button:not(.collapsed) { 
+    background-color: #FAFAFA;
+    color: black;
+}
+
+/* Quando o item está colapsado */
+#jano-accordion .accordion-button.collapsed { 
+    /* background-color: white; */
+    /* color: orange; */
+}
+
+/* Quando o item está focado */
+#jano-accordion .accordion-button:focus {
+    /* box-shadow: none; */
+    /* color: inherit; */
+    /* box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25); */
+}
+
+/* Painel da resposta */
+#jano-accordion .accordion-body {
+    background-color: #E5E5E5;
+    /* color: orange; */
+    /* border-left: 3px solid black; */
+}
+
+/* Velocidade de transição abre/fecha */
+#jano-accordion .accordion-collapse.collapsing {
+    transition: height 0.2s ease-in-out; 
+}

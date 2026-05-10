@@ -1,0 +1,56 @@
+/* Mercurio - Whatsapp no canto inferior direito */
+.mercurio {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.mercurio-link {
+    display: inline-flex;
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.mercurio-svg {
+    width: 50px;
+    height: 50px;
+    fill: white;
+}
+
+.mercurio-svg:hover {
+    fill: black;
+}
+
+
+
+/* Saturno - Chamada para Whatsapp */
+.saturno {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.saturno-link {
+    background-color: green;
+    border-radius: 10px;
+    padding: 20px;
+
+    /* Text */
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.saturno-link:hover {
+    /* Text */
+    color: black;
+}
+
+.saturno-svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}

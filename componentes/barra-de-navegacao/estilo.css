@@ -7,7 +7,8 @@ body {
     padding-top: 180px; /* Devido à topbar fixa */
 }
 
-#topbar {
+/* Netuno - barra de navegação */
+.netuno {
     /* Fixed top */
     position: fixed;
     top: 20px;
@@ -17,12 +18,40 @@ body {
 
     /* Aparência */
     border-radius: 20px;
+    background-color: white;
 }
 
-#conteudo {
+.netuno-logo {
+    /* border-radius: 20px; */
+    /* background-color: orange; */
+}
+
+#netuno-nav li { /* Items */
+    padding: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    /* background-color: #EFEFEF; */
+}
+
+#netuno-nav a { /* Texto */
+    color: black;
+}
+
+
+/* Atena - bloco principal da página */
+.atena {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+.atena-conteudo {
     height: 2000px; /* Para teste */
 
-    /* Aparência */
-    background-color: #eaeaea;
     border-radius: 20px;
+    background-color: white;
+    /* box-shadow: -5px -5px 5px 1px rgba(0,0,0,0.4); */
 }
+

@@ -1,0 +1,79 @@
+/* Jano - Perguntas e Respostas */
+#jano {
+    background-color: #F0F0F0;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#jano-titulo {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+
+    /* Âncora para :: after */
+    position: relative;
+}
+
+/* Enfeite em baixo de #jano-titulo */
+#jano-titulo::after { 
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    /* Centraliza a linha perfeitamente */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Largura, Espessura e Cor do enfeite */
+    width: 12em;
+    height: 3px;
+    background-color: blue;
+}
+
+#jano-accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+#jano-accordion > .accordion-item {
+    width: max(50%, 350px);
+}
+
+#jano-accordion .accordion-header {
+    /* background-color: orange; */
+    /* color: orange; */
+}
+
+/* Quando o item está aberto */
+#jano-accordion .accordion-button:not(.collapsed) { 
+    background-color: white;
+    color: black;
+}
+
+/* Quando o item está colapsado */
+#jano-accordion .accordion-button.collapsed { 
+    /* background-color: white; */
+    /* color: orange; */
+}
+
+/* Quando o item está focado */
+#jano-accordion .accordion-button:focus {
+    /* box-shadow: none; */
+    /* color: inherit; */
+    /* box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.25); */
+}
+
+/* Painel da resposta */
+#jano-accordion .accordion-body {
+    /* background-color: blue; */
+    /* color: orange; */
+    /* border-left: 3px solid black; */
+}
+
+/* Velocidade de transição abre/fecha */
+#jano-accordion .accordion-collapse.collapsing {
+    transition: height 0.2s ease-in-out; 
+}
