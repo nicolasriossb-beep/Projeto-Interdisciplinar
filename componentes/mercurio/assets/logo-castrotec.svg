@@ -1,0 +1,12 @@
+<svg width="300" height="100" viewBox="0 0 300 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="50" r="35" fill="#0D6EFD"/> <path d="M40 25V35M40 65V75M25 50H35M65 50H75" stroke="white" stroke-width="4" stroke-linecap="round"/>
+  <path d="M32 40L48 60M48 40L32 60" stroke="white" stroke-width="6" stroke-linecap="round"/>
+  
+  <text x="85" y="60" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#212529">
+    Castro<tspan fill="#0D6EFD">TEC</tspan>
+  </text>
+  
+  <text x="87" y="80" font-family="Arial, sans-serif" font-size="11" fill="#6C757D">
+    SOLUÇÕES EM ELETRODOMÉSTICOS
+  </text>
+</svg>
