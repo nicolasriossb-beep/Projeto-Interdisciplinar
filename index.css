@@ -37,6 +37,7 @@ body {
     right: 20px;
     width: 100%;
     height: 80px;
+   
 
     background-color:var(--topbar);
     display: flex;
@@ -54,11 +55,13 @@ body {
 }
 
 .top-buttons button {
+    text-decoration: none;
     margin-left: 10px;
     padding: 8px 15px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
+ 
 
     transition: 0.3s;
 }
@@ -128,11 +131,53 @@ body {
     min-height: 200vh;
     border-radius: 20px;
 }
+/*Pagina avalie*/
+.avaliacao-topo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.card-avaliacao {
+    background: var(--bloco);
+
+    padding: 40px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.estrelas {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.btn-google {
+    margin-top: 20px;
+
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+
+    background: #4285F4;
+    color: white;
+
+    cursor: pointer;
+    transition: 0.3s;
+
+    font-size: 16px;
+}
+.beneficios{
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+}
 /*Pagnina contato*/
 .painel-busca {
     width: calc(100% + 40px);
     margin: -20px -20px 0 -20px;
-    height: 70vh;
+    height: 40vh;
     min-height: 230px;
     overflow: hidden;
     border-radius: 20px 20px 0 0;
@@ -156,7 +201,7 @@ body {
     padding-bottom: 10px;
 }
 .card {
-    background: white;
+    background: #ccc;
     color: black;
     padding: 20px;
     border-radius: 15px;
@@ -164,6 +209,20 @@ body {
     min-width: 280px;
     text-align: center;
     scroll-snap-align: center;
+}
+.vejamais {
+    position: absolute;
+    top: 50px;
+    align-items: center;
+
+    background-color: var(--conteudo);
+    border-radius: 10px;
+    padding: 10px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.hidden2 {
+    display: none;
 }
 .foto {
     width: 80px;

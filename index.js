@@ -27,3 +27,7 @@ function fazerLogout(){
 
     window.location.href = "index.html";
 }
+function toggleVejaMais() {
+      const menu = doucument.getElementById("vejamais");
+      menu.classList.toggle("hidden");
+}
