@@ -1,117 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CastroTEC - A Melhor Assistência Técnica de Eletrodomésticos na Zona Sul de São Paulo</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="body-ajuda">
+   <button class="btn-voltar" onclick="voltarPagina()">
+    Voltar
+</button>
+<section class="ajuda-topo">
 
-        <!-- CSS e Javascript do Bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <h1>Veja alguns tópicos sobre possíveis dúvidas</h1>
 
-        <!-- Nosso CSS -->
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <header class="topbar">
-            <div class="logo">
-                <img src="logo.png" alt="Logo">
-            </div>
+</section>
 
-            <div class="top-buttons">
-                <div class="config">
-                    <button onclick="toggleMenu()">Configurações ⚙️</button>
+<section class="faq-container">
 
-                    <div id="btnConfig" class="menu-config hidden">
-                        <button onclick="toggleDarkMode()">Alternar tema</button>
-                    </div>
-                </div>
-                <button>
-                    <a href="ajuda.html">Ajuda</a>
-                </button>
-            </div>
-        </header>
-        <nav class="sidebar">
-            <a href="index.html">
-                <button>Menu Inicial</button>
-            </a>
-            <a href="avalie.html">
-                <button>Avalie Aqui</button>
-            </a>
-            <a href="contato.html">
-                <button>Busque</button>
-            </a>
-            <a href="maissobre.html">
-                <button>Mais Sobre</button>
-            </a>
-        </nav>
+    <div class="faq-item">
 
-        <main class="conteudo">
+        <button class="faq-btn">
+            Agendamento de Serviço
+        </button>
 
-            <div id="jano">
-                <h1 id="jano-titulo">Perguntas frequentes</h1>
-                <div class="accordion" id="jano-accordion">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" 
-                                data-bs-toggle="collapse" data-bs-target="#jano-collapseOne"
-                                aria-expanded="false" aria-controls="jano-collapseOne">
-                                Aceita pagamento fiado?
-                            </button>
-                        </h2>
-                        <div id="jano-collapseOne" class="accordion-collapse collapse" data-bs-parent="#jano-accordion">
-                            <div class="accordion-body">
-                                Não.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" 
-                                data-bs-toggle="collapse" data-bs-target="#jano-collapseTwo"
-                                aria-expanded="false" aria-controls="jano-collapseTwo">
-                                Como faço para agendar uma visita técnica?
-                            </button>
-                        </h2>
-                        <div id="jano-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#jano-accordion">
-                            <div class="accordion-body">
-                                Entre em contato pelo Whatsapp.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" 
-                                data-bs-toggle="collapse" data-bs-target="#jano-collapseThree"
-                                aria-expanded="false" aria-controls="jano-collapseThree">
-                                Como faço avaliar o serviço?
-                            </button>
-                        </h2>
-                        <div id="jano-collapseThree" class="accordion-collapse collapse" data-bs-parent="#jano-accordion">
-                            <div class="accordion-body">
-                                Escreva uma avaliação no Google.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" 
-                                data-bs-toggle="collapse" data-bs-target="#jano-collapseFour"
-                                aria-expanded="false" aria-controls="jano-collapseFour">
-                                Como relatar um problema?
-                            </button>
-                        </h2>
-                        <div id="jano-collapseFour" class="accordion-collapse collapse" data-bs-parent="#jano-accordion">
-                            <div class="accordion-body">
-                                Escreva uma reclamação pelo Whatsapp.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="faq-resposta hidden">
+            <p>
+                Você pode agendar um serviço entrando em contato pelo WhatsApp, localizado no lado inferior direito da tela.
+                 Ele ira te direcionar para o nosso contato principal de atendimento, ou então você pode encontrar o contato direto com nossos profissionais na aba "Busque".   
+            </p>
+        </div>
 
-        </main>
+    </div>
 
-        <script src="index.js"></script>
-    </body>
+    <div class="faq-item">
+
+        <button class="faq-btn">
+            Sistema de Avaliações
+        </button>
+
+        <div class="faq-resposta hidden">
+            <p>
+                As avaliações são feitas na aba "Avalie Aqui", onde você pode deixar sua opinião sobre nossos serviços.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="faq-item">
+
+        <button class="faq-btn">
+            Cadastro de Cliente
+        </button>
+
+        <div class="faq-resposta hidden">
+            <p>
+                O cadastro é realizado durante o atendimento. Onde o profissional selecionado irá solicitar seus dados para a realização do serviço, e a partir disso, futuras realizações de serviços serão facilitadas.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+       <script src="index.js"></script>
+</body>
 </html>

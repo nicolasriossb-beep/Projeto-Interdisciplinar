@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const botao = document.createElement("a");
 
-    botao.href = "https://wa.me/5511945070187?text=Olá,%20vim%20pelo%20site";
+    botao.href = "https://wa.me/5511951491871?text=Olá,%20vim%20pelo%20site";
     botao.target = "_blank";
     botao.classList.add("whatsapp-btn");
 
@@ -31,3 +31,32 @@ function toggleVejaMais() {
       const menu = doucument.getElementById("vejamais");
       menu.classList.toggle("hidden");
 }
+function voltarPagina() {
+    window.history.back();
+}
+const faqButtons = document.querySelectorAll(".faq-btn");
+
+faqButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const resposta = button.nextElementSibling;
+
+        resposta.classList.toggle("hidden");
+
+    });
+
+});
+const botoesVerMais = document.querySelectorAll(".btn-vermais");
+botoesVerMais.forEach(botao => {
+    botao.addEventListener("click", () => {
+        const infoExtra = botao.parentElement.querySelector(".info-extra");
+        infoExtra.classList.toggle("hidden");
+
+        if(infoExtra.classList.contains("hidden")) {
+            botao.textContent = "Ver mais";
+        } else {
+            botao.textContent = "Ver menos";
+        }
+    });
+});
