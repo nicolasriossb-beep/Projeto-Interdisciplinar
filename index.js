@@ -3,10 +3,6 @@ function toggleMenu() {
     menu.classList.toggle("hidden");
 }
 
-function toggleDarkMode() {
-    document.body.classList.toggle("dark");
-}
-
 document.addEventListener("DOMContentLoaded", function () {
 
     const botao = document.createElement("a");
@@ -47,19 +43,6 @@ faqButtons.forEach(button => {
     });
 
 });
-const botoesVerMais = document.querySelectorAll(".btn-vermais");
-botoesVerMais.forEach(botao => {
-    botao.addEventListener("click", () => {
-        const infoExtra = botao.parentElement.querySelector(".info-extra");
-        infoExtra.classList.toggle("hidden");
-
-        if(infoExtra.classList.contains("hidden")) {
-            botao.textContent = "Ver mais";
-        } else {
-            botao.textContent = "Ver menos";
-        }
-    });
-});
 
 function trocarServico(imagem, titulo, descricao) {
 
@@ -69,4 +52,44 @@ function trocarServico(imagem, titulo, descricao) {
 
     document.getElementById("descricaoServico").textContent = descricao;
 
+}
+
+//Mudar Tema
+function toggleDarkMode() {
+    document.body.classList.toggle("dark");
+
+    // salva preferência
+    if (document.body.classList.contains("dark")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+// carrega o tema salvo
+window.onload = () => {
+    const tema = localStorage.getItem("tema");
+
+    if (tema === "escuro") {
+        document.body.classList.add("dark");
+    }
+}
+
+//Aumentar Tamanho da Fonte
+function toggleTextSize(){
+    document.body.classList.toggle("text-size");
+
+    if(document.body.classList.contains("text-size")) {
+        localStorage.setItem("Tamanho","Grande");
+    } else {
+        localStorage.setItem("Tamanho","Normal");
+    }
+}
+
+window.onload = () => {
+    const tamanho = localStorage.getItem("Tamanho");
+
+    if(tamanho === "Grande") {
+        document.body.classList.add("text-size");
+    }
 }

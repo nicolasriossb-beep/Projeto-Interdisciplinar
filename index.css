@@ -18,6 +18,10 @@
     --bloco: gray;
 }
 
+.text-size {
+    font-size: large;
+}
+
 
 body {
     margin: 0;
