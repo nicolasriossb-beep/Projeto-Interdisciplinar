@@ -60,3 +60,13 @@ botoesVerMais.forEach(botao => {
         }
     });
 });
+
+function trocarServico(imagem, titulo, descricao) {
+
+    document.getElementById("imagemGrande").src = imagem;
+
+    document.getElementById("tituloServico").textContent = titulo;
+
+    document.getElementById("descricaoServico").textContent = descricao;
+
+}

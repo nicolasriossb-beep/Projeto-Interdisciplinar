@@ -32,7 +32,7 @@
         <button>Avalie Aqui</button>
         </a>
         <a href="contato.html">
-        <button>Busque</button>
+        <button>Prestadores de Serviço</button>
         </a>
         <a href="maissobre.html">
         <button>Mais Sobre</button>
@@ -42,41 +42,64 @@
     </nav>
     </nav>
    <main class="conteudo">
+   <h1>Veja alguns de nossos serviços</h1>
+   <section class="galeria-servicos">
 
-    <section class="sobre-topo">
-        <h1>LOGO</h1>
-        <hr>
-        <h2>Tudo Que Você Precisa Saber Sobre a CastroTEC</h2>
-        <h3>Título</h3>
-        <p></p>
-    </section>
+    <!-- MINI IMAGENS -->
+    <div class="miniaturas">
 
-   
-    <section class="carrossel">
+        <img
+        src="img/geladeira.jpg"
 
-        <button class="seta"><</button>
+        onclick="trocarServico(
+        'img/geladeira.jpg',
+        'Conserto de Geladeira',
+        'Serviço realizado na região de São Paulo.'
+        )">
 
-        <div class="imagens">
-            <div class="img img4"></div>
-            <div class="img img5"></div>
-        </div>
+        <img
+        src="img/maquina.jpg"
 
-        <button class="seta">></button>
+        onclick="trocarServico(
+        'img/maquina.jpg',
+        'Manutenção de Máquina de Lavar',
+        'Atendimento realizado em domicílio.'
+        )">
 
-    </section>
+        <img
+        src="img/microondas.jpg"
 
-   
-    <section class="bloco">
-        <div class="texto">
-            <p>A CastroTEC é uma iniciativa por parte de Gustavo Castro, um jovem empeendedor que vem se especializando no conserto de eletrodomésticos, e que possuia o desejo de fazer sua empresa crescer, especialmente no meio digital.
-        Em colaboração aos alunos da Fatec ZL isso foi possivel, reseultando não apenas em um site, mas em uma expansão geral dos serviços da agora CastroTEC.
-    Contamos com novos colaboradores, empresa situada, com especialidades bem definidas. 
+        onclick="trocarServico(
+        'img/microondas.jpg',
+        'Conserto de Micro-ondas',
+        'Troca de peças e manutenção preventiva.'
+        )">
 
-     </p>
-        </div>
-        <div class="imagem img6"></div>
-    </section>
+    </div>
 
+    <!-- IMAGEM GRANDE -->
+    <div class="servico-destaque">
+
+        <img
+        id="imagemGrande"
+        src="img/geladeira.jpg">
+
+    </div>
+
+    <!-- TEXTO -->
+    <div class="texto-servico">
+
+        <h2 id="tituloServico">
+            Conserto de Geladeira
+        </h2>
+
+        <p id="descricaoServico">
+            Serviço realizado na região de São Paulo.
+        </p>
+
+    </div>
+
+</section>
 </main>
      <script src="index.js"></script>
 </body>
