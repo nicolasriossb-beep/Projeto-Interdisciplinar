@@ -1,0 +1,122 @@
+/* Whatsapp */
+.whatsapp-svg {
+    fill: currentColor;
+}
+
+.whatsapp-link:hover {
+    cursor: pointer;
+}
+
+.whatsapp-estilo {
+    display: inline-flex;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+.whatsapp-estilo:hover {
+    color: black;
+}
+
+/* Introdução - Assistência Técnica em Eletrodomésticos */
+#intro {
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/castrotec-serviços.webp');
+    background-size: cover;
+    min-height: 80vh;
+}
+
+/* Enfeite embaixo de um título */
+.titulo-enfeite {
+    position: relative;
+}
+
+.titulo-enfeite::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+
+    /* Centraliza a linha perfeitamente */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Largura, Espessura e Cor do enfeite */
+    width: min(100%, 10em);
+    height: 3px;
+    background-color: blue;
+}
+
+/* Customizar enfeite */
+#serviços-titulo::after {
+    width: min(100%, 9em);
+}
+
+/* Perguntas Frequentes (faq) */
+#faq {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Customizar enfeite */
+#faq-titulo::after {
+    width: min(100%, 12em);
+}
+
+#faq-accordion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 50px;
+}
+
+#faq-accordion > .accordion-item {
+    width: min(100%, 50em);
+}
+
+/* Quando o item está aberto */
+#faq-accordion .accordion-button:not(.collapsed) { 
+    background-color: white;
+    color: black;
+}
+
+/* Velocidade de transição abre/fecha */
+#faq-accordion .accordion-collapse.collapsing {
+    transition: height 0.2s ease-in-out; 
+}
+
+
+
+/* Limitar a altura das imagens do carrossel */
+.trabalhos-feitos-img {
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+#trabalhos-feitos-titulo::after {
+    width: min(100%, 15em);
+}
+
+.carousel-item {
+    /* O valor padrão é .6s */
+    transition: transform .2s ease-in-out !important;
+}
+
+.carousel-indicators button {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50%;
+    /* O valor padrão é .6s */
+    transition: opacity .2s ease !important;
+}
+
+/* Ícone da seta esquerda */
+.carousel-control-prev-icon {
+    /* Configurar fill= */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230000FF'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important;
+}
+
+/* Ícone da seta direita */
+.carousel-control-next-icon {
+    /* Configurar fill= */
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230000FF'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+}

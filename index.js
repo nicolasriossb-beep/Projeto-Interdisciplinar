@@ -95,4 +95,17 @@ window.onload = () => {
 
 
 
+// Adicionar link de whatsapp
+function linkWhats(links) {
+    for (let i = 0; i < links.length; i++) {
+        links[i].href = "https://wa.me/5511951491871?text=Olá,%20vim%20pelo%20site";
+        links[i].target = "_blank";
+        links[i].ariaLabel = "Agendar visita técnica por Whatsapp"
+    }
+}
 
+// Selecionar todos os elementos de uma classe
+const whatsappLink = document.querySelectorAll('.whatsapp-link');
+
+// Adicionar atributos a todos os elementos
+linkWhats(whatsappLink)
