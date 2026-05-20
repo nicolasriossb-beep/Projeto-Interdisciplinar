@@ -6,6 +6,7 @@
     --sidebar-hover: #2a1d81;
     --conteudo: #eaeaea;
     --bloco: white;
+    --intro: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/castrotec-serviços.webp');
 }
 
 .dark {
@@ -16,6 +17,7 @@
     --sidebar-hover: #2a1d81;
     --conteudo: #2a2a2a;
     --bloco: gray;
+    --intro: linear-gradient(rgba(128,128,128,0.8), rgba(128,128,128,0.8)), url('img/castrotec-serviços.webp');
 }
 
 .text-size {

@@ -1,3 +1,12 @@
+/* Cores */
+.conteudo section {
+    background-color: var(--bloco);
+}
+
+#atendimento svg {
+    fill: var(--text);
+}
+
 /* Whatsapp */
 .whatsapp-svg {
     fill: currentColor;
@@ -20,7 +29,7 @@
 
 /* Introdução - Assistência Técnica em Eletrodomésticos */
 #intro {
-    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url('img/castrotec-serviços.webp');
+    background-image: var(--intro);
     background-size: cover;
     min-height: 80vh;
 }
