@@ -66,15 +66,6 @@ function toggleDarkMode() {
     }
 }
 
-// carrega o tema salvo
-window.onload = () => {
-    const tema = localStorage.getItem("tema");
-
-    if (tema === "escuro") {
-        document.body.classList.add("dark");
-    }
-}
-
 //Aumentar Tamanho da Fonte
 function toggleTextSize(){
     document.body.classList.toggle("text-size");
@@ -86,10 +77,22 @@ function toggleTextSize(){
     }
 }
 
+// carrega o tema salvo
 window.onload = () => {
+    //Modo Escuro
+    const tema = localStorage.getItem("tema");
+
+    if (tema === "escuro") {
+        document.body.classList.add("dark");
+    }
+
     const tamanho = localStorage.getItem("Tamanho");
 
     if(tamanho === "Grande") {
         document.body.classList.add("text-size");
     }
 }
+
+
+
+
