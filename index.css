@@ -472,6 +472,32 @@ section {
 .faq-resposta {
     padding: 15px;
 }
+
+/* Footer */
+.footer {
+    width: calc(100% - 190px);
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    margin-left: 190px;
+    margin-top: 10px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+.footer-conteudo {
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+.footer-conteudo h3 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
 /*Versão Mobile - Tentativa 3*/
 @media (max-width: 768px) {
 
