@@ -59,6 +59,22 @@
     width: min(100%, 9em);
 }
 
+
+:root {
+    --como-funciona-bg: #f0f4f8;
+}
+
+.dark {
+    --como-funciona-bg: #3E47A6;
+}
+
+#como-funciona-row > div {
+    flex: 1;
+    box-shadow: 0px 0px 5px 3px orange;
+    background-color: var(--como-funciona-bg);
+}
+
+
 /* Perguntas Frequentes (faq) */
 #faq {
     padding-top: 100px;
