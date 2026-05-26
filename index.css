@@ -534,6 +534,12 @@ section {
     }.carrossel {
         flex-direction: column;
     }
+    /* Footer */
+    .footer {
+        width: 100%;
+        margin-left: 0px;
+    }
+
 }
 @keyframes aparecer {
     from {
