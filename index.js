@@ -109,3 +109,22 @@ const whatsappLink = document.querySelectorAll('.whatsapp-link');
 
 // Adicionar atributos a todos os elementos
 linkWhats(whatsappLink)
+
+let fonteGrande =
+localStorage.getItem("fonteGrande") === "true";
+
+if (fonteGrande) {
+
+    document.body.classList.add("fonte-grande");
+}
+function aumentarFonte() {
+
+    fonteGrande = !fonteGrande;
+
+    document.body.classList.toggle("fonte-grande");
+
+    localStorage.setItem(
+        "fonteGrande",
+        fonteGrande
+    );
+}
