@@ -1,3 +1,7 @@
+.lead {
+    font-size: 1.25em;
+}
+
 /* Cores */
 .conteudo section {
     background-color: var(--bloco);
