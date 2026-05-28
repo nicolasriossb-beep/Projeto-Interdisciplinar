@@ -15,6 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
     
     document.body.appendChild(botao);
 
+    const miniaturas = document.querySelectorAll('.miniaturas img');
+    const miniaturasRow = document.querySelector('.miniaturas');
+    const prevButton = document.querySelector('.miniatura-prev');
+    const nextButton = document.querySelector('.miniatura-next');
+
+    if (miniaturas.length > 0) {
+        miniaturas.forEach(img => {
+            img.addEventListener('click', () => {
+                miniaturas.forEach(item => item.classList.remove('active'));
+                img.classList.add('active');
+            });
+        });
+
+        if (prevButton && nextButton && miniaturasRow) {
+            prevButton.addEventListener('click', () => {
+                miniaturasRow.scrollBy({ left: -220, behavior: 'smooth' });
+            });
+
+            nextButton.addEventListener('click', () => {
+                miniaturasRow.scrollBy({ left: 220, behavior: 'smooth' });
+            });
+        }
+    }
+
 });
 
 function fazerLogout(){
@@ -24,13 +48,13 @@ function fazerLogout(){
     window.location.href = "index.html";
 }
 function toggleVejaMais() {
-      const menu = doucument.getElementById("vejamais");
+      const menu = document.getElementById("vejamais");
       menu.classList.toggle("hidden");
 }
 function voltarPagina() {
     window.history.back();
 }
-const faqButtons = document.querySelectorAll(".faq-btn");
+const faqButtons = document.querySelectorAll(".faq-pergunta");
 
 faqButtons.forEach(button => {
 
@@ -52,6 +76,10 @@ function trocarServico(imagem, titulo, descricao) {
 
     document.getElementById("descricaoServico").textContent = descricao;
 
+    const miniaturas = document.querySelectorAll('.miniaturas img');
+    miniaturas.forEach(img => {
+        img.classList.toggle('active', img.dataset.src === imagem);
+    });
 }
 
 //Mudar Tema
@@ -67,18 +95,8 @@ function toggleDarkMode() {
 }
 
 //Aumentar Tamanho da Fonte
-function toggleTextSize(){
-    document.body.classList.toggle("text-size");
-
-    if(document.body.classList.contains("text-size")) {
-        localStorage.setItem("Tamanho","Grande");
-    } else {
-        localStorage.setItem("Tamanho","Normal");
-    }
-}
-
 // carrega o tema salvo
-window.onload = () => {
+window.addEventListener("load", () => {
     //Modo Escuro
     const tema = localStorage.getItem("tema");
 
@@ -86,21 +104,22 @@ window.onload = () => {
         document.body.classList.add("dark");
     }
 
-    const tamanho = localStorage.getItem("Tamanho");
+    const fonteGrandeSalva = localStorage.getItem("fonteGrande");
 
-    if(tamanho === "Grande") {
-        document.body.classList.add("text-size");
+    if (fonteGrandeSalva === "true") {
+        document.body.classList.add("fonte-grande");
     }
-}
+});
 
 
 
 // Adicionar link de whatsapp
 function linkWhats(links) {
     for (let i = 0; i < links.length; i++) {
-        links[i].href = "https://wa.me/5511951491871?text=Olá,%20vim%20pelo%20site";
+            links[i].href = "https://wa.me/5511951491871?text=Olá,%20vim%20pelo%20site";
         links[i].target = "_blank";
-        links[i].ariaLabel = "Agendar visita técnica por Whatsapp"
+        links[i].setAttribute("rel", "noopener noreferrer");
+        links[i].setAttribute("aria-label", "Agendar visita técnica por WhatsApp");
     }
 }
 
