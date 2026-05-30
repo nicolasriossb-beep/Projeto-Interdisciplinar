@@ -92,9 +92,12 @@ function toggleDarkMode() {
     } else {
         localStorage.setItem("tema", "claro");
     }
+    //Mudar Imagem
+    document.getElementById("img-logo").src = "img/CastroTEC Logo fundo cinza.png";
 }
 
-//Aumentar Tamanho da Fonte
+
+    
 // carrega o tema salvo
 window.addEventListener("load", () => {
     //Modo Escuro
@@ -102,6 +105,7 @@ window.addEventListener("load", () => {
 
     if (tema === "escuro") {
         document.body.classList.add("dark");
+        document.getElementById("img-logo").src = "img/CastroTEC Logo fundo cinza.png";
     }
 
     const fonteGrandeSalva = localStorage.getItem("fonteGrande");
