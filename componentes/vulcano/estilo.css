@@ -1,0 +1,102 @@
+
+/* Container pai para posicionamento */
+.vulcano {
+    position: relative;
+    width: 100%;
+
+    /* Exemplo de largura máxima */
+    /* max-width: 600px;
+    /* margin: 20px auto; */
+    /* border: 1px solid #ccc; */
+
+    /* Garante que nada saia do wrapper */
+    /* overflow: hidden; */
+}
+
+.vulcano-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+
+    /* Adiciona animação suave ao scroll */
+    /* scroll-behavior: smooth; */
+}
+
+.vulcano-container .card-img-top {
+    border-radius: 50%;
+    height: 275px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.vulcano-container > .card {
+    flex-shrink: 0;
+    width: 18rem;
+}
+
+.card-title {
+    text-align: center;
+}
+
+
+/* Esconde a barra de rolagem padrão */
+.vulcano-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilo básico da seta */
+.vulcano-scroll-arrow {
+    /* Posição */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1030;
+
+    /* Texto */
+    color: black;
+    font-size: 40px;
+
+    /* Botão */
+    width: 50px; 
+    border: none;
+    cursor: pointer;
+
+    /* Começa escondido */
+    opacity: 0;
+    visibility: hidden;
+
+    /* Animação de visível para escondido */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+
+/* Classe para mostrar a seta (adicionada via JS) */
+.vulcano-scroll-arrow.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.vulcano-right-arrow {
+    right: 0;
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.9) 50%);
+}
+
+.vulcano-left-arrow {
+    left: 0;
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.9) 50%);
+}
+
+/* Efeito de hover na seta */
+.vulcano-scroll-arrow:hover {
+    color: blue;
+}
+
+.vulcano-right-arrow:hover {
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 50%);
+}
+
+.vulcano-left-arrow:hover {
+    background: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,1) 50%);
+}
