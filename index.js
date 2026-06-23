@@ -26,26 +26,46 @@ document.addEventListener("DOMContentLoaded", function () {
         topbar.appendChild(sidebarToggle);
     }
 
-    const miniaturas = document.querySelectorAll('.miniaturas img');
+    const miniaturas = Array.from(document.querySelectorAll('.miniaturas img'));
     const miniaturasRow = document.querySelector('.miniaturas');
     const prevButton = document.querySelector('.miniatura-prev');
     const nextButton = document.querySelector('.miniatura-next');
+    let currentServiceIndex = miniaturas.findIndex(img => img.classList.contains('active'));
+
+    if (currentServiceIndex === -1) {
+        currentServiceIndex = 0;
+    }
+
+    function atualizarServicoPorIndice(index) {
+        const img = miniaturas[index];
+        if (!img) return;
+        currentServiceIndex = index;
+        miniaturas.forEach(item => item.classList.remove('active'));
+        img.classList.add('active');
+        trocarServico(
+            img.dataset.src || img.src,
+            img.dataset.titulo || img.alt,
+            img.dataset.descricao || ''
+        );
+        img.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
 
     if (miniaturas.length > 0) {
-        miniaturas.forEach(img => {
+        miniaturas.forEach((img, index) => {
             img.addEventListener('click', () => {
-                miniaturas.forEach(item => item.classList.remove('active'));
-                img.classList.add('active');
+                atualizarServicoPorIndice(index);
             });
         });
 
         if (prevButton && nextButton && miniaturasRow) {
             prevButton.addEventListener('click', () => {
-                miniaturasRow.scrollBy({ left: -220, behavior: 'smooth' });
+                currentServiceIndex = (currentServiceIndex - 1 + miniaturas.length) % miniaturas.length;
+                atualizarServicoPorIndice(currentServiceIndex);
             });
 
             nextButton.addEventListener('click', () => {
-                miniaturasRow.scrollBy({ left: 220, behavior: 'smooth' });
+                currentServiceIndex = (currentServiceIndex + 1) % miniaturas.length;
+                atualizarServicoPorIndice(currentServiceIndex);
             });
         }
     }
